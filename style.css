@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+/* common */
+body {
+  margin: 0 auto;
+  max-width: 560px;
+  width: calc(100% - 16px - 16px);
+  background: #E6E7EB;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 64px;
+  color: #4A4E69;
+  font-size: 32px;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+  margin-top: 16px;
+}
+
+p {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+img {
+  vertical-align: bottom;
+  margin-top: 16px;
+
+}
+
+a {
+  text-decoration: none;
+  color: #E6E7EB;
+  margin: 0;
+  /* vertical-align: center; */
+}
+
+hr {
+  margin: 32px auto;
+  border: 2px solid #C4C9E8;
+  width: 100%;
+}
+
+/* header */
+header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+header img {
+  border: 10px solid #E6E7EB;
+}
+header h3{
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.yo {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.yo h2 {
+  margin-top: 32px;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.profile:hover {
+  transform: rotate(-5deg);
+  border: 10px solid #C4C9E8;
+
+}
+
+.rdv {
+  text-decoration: none;
+  font-weight: bold;
+  color: #E6E7EB;
+  background: #C4C9E8;
+  border: 2px solid #C4C9E8;
+  padding: 16px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 50;
+}
+
+.rdv:hover {
+  background: #C4C9E8;
+  color: #4A4E69;
+  border: 2px solid #4A4E69;
+  font-weight: bold;
+}
+
+.rdv span {
+  font-size: 0;
+}
+
+header {
+  color: #4A4E69;
+}
+
+.sns{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  text-align: center;
+}
+.sns div{
+  opacity: 0.5;
+}
+.sns div:hover{
+  opacity: 1;
+}
+
+
+/* container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.specialisation{
+  font-size: 16px;
+  /* text-align: justify; */
+}
+
+.introduction {
+  background: #4A4E69;
+  padding: 28px 28px;
+  border-radius: 8px;
+  color: #E6E7EB;
+}
+
+.languages {
+  margin: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language {
+  display: block;
+  margin-top: 8px;
+}
+.language p{
+  margin: 0;
+}
+
+.level{
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.ddspace{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* 職歴やらトグル情報 */
+
+details {
+  border: 1px solid #C4C9E8;
+  border-radius: 4px;
+  margin: 16px 0;
+  padding: 16px;
+  color: #4A4E69;
+}
+
+
+summary {
+  font-size: 20px;
+}
+
+dl {
+  padding-left: 20px;
+}
+
+dt {
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+dd{
+  margin: 0;
+}
+
+dl h3 {
+  margin-top: 32px;
+  border-bottom: 2px solid #4A4E69;
+}
+
+/* footer */
+footer {
+  margin: 64px 0;
+  text-align: center;
+  color: #4A4E69;
+}
+
+footer a {
+  color: #4A4E69;
+
+}
+
+
+/* 予約のとり方 */
+.comment{
+  color: #C4C9E8;
+}
+.comment h2{
+  color: #4A4E69;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.comment a{
+  color: #C4C9E8;
+}
+.comment a:hover{
+  color:#4A4E69;
+  border-radius: 8px;
+  padding: 4px;
+  background: #C4C9E8;
+
+}
+
+.comment ul{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.comment li{
+  padding: 4px;
+  margin: 0;
+}
+
+@media (min-width: 560px) {
+  body {
+    margin: 0 auto;
+    width: calc(100% -32px -32px);
+  }
+
+  h1 {
+    margin-top: 80px;
+    font-size: 40px;
+  }
+
+  img {
+    margin-top: 16px;
+  }
+
+  .rdv {
+    border-radius: 8px;
+    padding: 16px 48px;
+  }
+
+  .rdv span {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 800px) {
+  .rdv {
+    left: 120px;
+    border-radius: 8px;
+    padding: 16px 48px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .rdv {
+    left: 250px;
+    border-radius: 8px;
+    padding: 16px 48px;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  .rdv {
+    left: 330px;
+    border-radius: 8px;
+    padding: 16px 48px;
+  }
+}
